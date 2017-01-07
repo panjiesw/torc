@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"removeComments": false,
+		"sourceMap": false,
+		"allowSyntheticDefaultImports": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"charset": "utf8",
+		"declaration": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedParameters": true,
+		"strictNullChecks": true,
+		"jsx": "react",
+		"outDir": "lib",
+		"baseUrl": "."
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
