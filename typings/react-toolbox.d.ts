@@ -3,6 +3,48 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
+declare module 'react-toolbox/lib/button/Button' {
+	import * as React from 'react';
+	import { ButtonTheme } from 'react-toolbox/lib/button';
+
+	export interface ButtonProps extends React.HTMLAttributes<any> {
+		accent?: boolean;
+		disabled?: boolean;
+		flat?: boolean;
+		floating?: boolean;
+		href?: string;
+		icon?: React.ReactNode | string;
+		inverse?: boolean;
+		label?: string;
+		mini?: boolean;
+		neutral?: boolean;
+		primary?: boolean;
+		raised?: boolean;
+		ripple?: boolean;
+		theme?: ButtonTheme;
+	}
+
+	export class Button extends React.Component<ButtonProps, {}> { }
+	export default Button;
+
+	export { ButtonTheme }
+}
+
+declare module 'react-toolbox/lib/button/theme.css' {
+  export const accent: string;
+  export const button: string;
+  export const flat: string;
+  export const floating: string;
+  export const icon: string;
+  export const inverse: string;
+  export const mini: string;
+  export const neutral: string;
+  export const primary: string;
+  export const raised: string;
+  export const rippleWrapper: string;
+  export const toggle: string;
+}
+
 declare module 'react-toolbox/lib/identifiers' {
 	export const APP_BAR: string;
 	export const AUTOCOMPLETE: string;

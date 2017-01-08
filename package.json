@@ -1,13 +1,16 @@
 {
 	"name": "torc",
-	"version": "0.1.0",
+	"version": "0.2.0-dev.0",
 	"description": "A set of React Toolbox compatible components intergrated with React Router capabilities",
 	"main": "lib/index",
+	"module": "es6/index",
+	"jsnext:main": "es6/index",
 	"types": "lib/index.d.ts",
 	"license": "MIT",
 	"homepage": "https://github.com/panjiesw/torc",
 	"files": [
-		"lib"
+		"lib",
+		"es6"
 	],
 	"repository": {
 		"type": "git",
@@ -31,11 +34,13 @@
 		"toolkit"
 	],
 	"scripts": {
-		"build": "tsc -p tsconfig.build.json",
+		"build": "npm run build:es5 && npm run build:es6",
+		"build:es5": "tsc -p tsconfig.build.json",
+		"build:es6": "tsc -p tsconfig.build.json --target es6 --module es6 --outDir es6",
 		"codecov": "codecov",
 		"clean": "npm run clean:cache && npm run clean:dist",
 		"clean:cache": "del-cli .awcache",
-		"clean:lib": "del-cli lib",
+		"clean:lib": "del-cli lib es6",
 		"coverage": "npm run coverage:remap && npm run coverage:report",
 		"coverage:remap": "remap-istanbul -i coverage/coverage.json -o coverage/coverage-remapped.json -t json -e node_modules",
 		"coverage:report": "node tools/coverage.js",
@@ -50,6 +55,7 @@
 	"devDependencies": {
 		"@types/classnames": "^0.0.32",
 		"@types/enzyme": "^2.7.1",
+		"@types/invariant": "^2.2.28",
 		"@types/jasmine": "^2.5.40",
 		"@types/jasmine-expect": "^2.0.29",
 		"@types/karma": "^0.13.33",

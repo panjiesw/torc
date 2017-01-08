@@ -33,6 +33,10 @@
   version "2.0.43"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-2.0.43.tgz#8b1101111eb07324d69d349853371de28d1a9fab"
 
+"@types/invariant@^2.2.28":
+  version "2.2.28"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.28.tgz#ad721b5c0168db3aaffe551d4acfb8a5b4386e30"
+
 "@types/jasmine-expect@^2.0.29":
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/@types/jasmine-expect/-/jasmine-expect-2.0.29.tgz#07bb665905a4f81037ec27d6fe6279484e2ac56e"
