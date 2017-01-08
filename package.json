@@ -1,6 +1,6 @@
 {
 	"name": "torc",
-	"version": "0.1.0-dev.0",
+	"version": "0.1.0",
 	"description": "A set of React Toolbox compatible components intergrated with React Router capabilities",
 	"main": "lib/index",
 	"types": "lib/index.d.ts",
