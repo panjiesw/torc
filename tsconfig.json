@@ -1,23 +1,22 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"module": "commonjs",
+		"module": "es6",
 		"moduleResolution": "node",
-		"removeComments": false,
-		"sourceMap": false,
 		"allowSyntheticDefaultImports": true,
-		"allowUnreachableCode": false,
-		"allowUnusedLabels": false,
+		"removeComments": false,
 		"charset": "utf8",
-		"declaration": true,
-		"noImplicitAny": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
 		"noUnusedParameters": true,
 		"strictNullChecks": true,
 		"jsx": "react",
-		"outDir": "lib",
-		"baseUrl": "."
+		"baseUrl": ".",
+		"paths": {
+			"torc/*": [
+				"./src/*"
+			]
+		}
 	},
 	"exclude": [
 		"node_modules"

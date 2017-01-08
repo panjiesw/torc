@@ -3,7 +3,7 @@
 	"css.validate": false,
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": false,
+	"editor.detectIndentation": true,
 	"editor.renderWhitespace": "boundary",
 	"editor.rulers": [
 		120
@@ -27,5 +27,7 @@
 	"tslint.ignoreDefinitionFiles": true,
 	"tslint.exclude": "./lib",
 	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+	"javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
 	"xo.enable": false
 }

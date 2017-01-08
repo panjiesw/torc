@@ -1,0 +1,16 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "commonjs",
+		"removeComments": true,
+		"rootDir": "src",
+		"sourceMap": true,
+		"declaration": true,
+		"outDir": "lib"
+	},
+	"exclude": [
+		"node_modules",
+		"test",
+		"spec"
+	]
+}
