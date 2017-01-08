@@ -21,14 +21,13 @@ export interface LinkProps extends React.HTMLAttributes<RouterLink> {
 }
 
 const Link: React.SFC<LinkProps> =
-	({to, count, icon, label, onlyActiveOnIndex, children, theme, className, ...others}) => {
+	({count, icon, label, children, theme, className, ...others}) => {
 		let classes = className;
 		if (theme) {
 			classes = classnames(theme.link, className);
 		}
 		return (
-			<RouterLink onlyActiveOnIndex={onlyActiveOnIndex}
-				to={to}
+			<RouterLink
 				activeClassName={theme && theme.active}
 				className={classes}
 				{...others} >
