@@ -8,4 +8,16 @@ A set of specific compatible components of [React Toolbox](http://www.react-tool
 
 **WIP!**
 
-**NO TESTS!**
+## TODO
+
+- [x] Link component and tests
+- [] ButtonLink component and tests
+- [] IconButtonLink component and tests
+- [] List component (and its subcomponents) and tests
+- [] Navigation component
+
+## Limitations
+
+The components code are either copied from or wrapped the React Toolbox original component.
+This make the library sort of like a bandaid than a proper solution.
+But to make the components here participate in styling and theming procedure of React Toolbox, it's the only way I can think of. Please drop an issue if you find other solutions.
