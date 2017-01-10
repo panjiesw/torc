@@ -8,6 +8,7 @@ jspm_packages
 .yarn-integrity
 lib
 es6
+build
 .env
 .awcache
 *.css.d.ts

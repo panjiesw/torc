@@ -4,6 +4,7 @@
 		"module": "es6",
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
 		"removeComments": false,
 		"charset": "utf8",
 		"noImplicitReturns": true,
