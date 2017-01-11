@@ -13,9 +13,12 @@ import invariant from 'invariant';
 
 export interface ButtonLinkProps extends ButtonProps {
 	to: Router.RoutePattern | Router.LocationDescriptor | ((...args: any[]) => Router.LocationDescriptor);
+	type?: string;
 	replace?: boolean;
 	location?: Location;
 	router?: InjectedRouter;
+	params?: any;
+	routes?: any;
 }
 
 function isLeftClickEvent(event: React.MouseEvent<any>) {
@@ -30,7 +33,7 @@ const factory: (Button: React.ComponentClass<ButtonProps>) => React.ComponentCla
 	class ButtonLink extends React.PureComponent<ButtonLinkProps, {}> {
 		// this is take from react-router's Link handleClick
 		handleClick = (event: React.MouseEvent<any>) => {
-			const {onClick, router, target, href, to, location, replace} = this.props;
+			const {onClick, router, target, type, to, location, replace} = this.props;
 
 			if (onClick) onClick(event);
 
@@ -45,7 +48,7 @@ const factory: (Button: React.ComponentClass<ButtonProps>) => React.ComponentCla
 			} else {
 				if (isModifiedEvent(event) || !isLeftClickEvent(event)) return;
 
-				if (target && href) return;
+				if (target && type === 'a') return;
 
 				event.preventDefault();
 
@@ -64,9 +67,13 @@ const factory: (Button: React.ComponentClass<ButtonProps>) => React.ComponentCla
 
 		render(): JSX.Element | null {
 			// tslint:disable-next-line:no-unused-variable
-			const {onClick, children, ...others} = this.props;
+			const {onClick, children, href, type, to, replace, location, params, routes, router, ...others} = this.props;
+			let _href: string | undefined = undefined;
+			if (type === 'a' && typeof to === 'string') {
+				_href = to;
+			}
 			return (
-				<Button onClick={this.handleClick} {...others}>
+				<Button onClick={this.handleClick} href={_href} {...others}>
 					{children}
 				</Button>
 			)

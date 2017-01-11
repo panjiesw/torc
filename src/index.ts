@@ -4,7 +4,7 @@
 // https://opensource.org/licenses/MIT
 
 import { Link, LinkProps } from './link';
-import { ButtonLink, ButtonLinkProps } from './button';
+import { ButtonLink, ButtonLinkProps } from './button_link';
 
 export { Link, LinkProps };
 export { ButtonLink, ButtonLinkProps };

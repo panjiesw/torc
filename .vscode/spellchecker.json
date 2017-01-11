@@ -1,11 +1,12 @@
 {
     "language": "en_US",
     "ignoreWordsList": [
-        "TORC",
-        "TODO",
         "ButtonLink",
         "IconButtonLink",
-        "bandaid"
+        "TORC",
+        "TODO",
+        "bandaid",
+        "onlyActiveOnIndex"
     ],
     "documentTypes": [
         "markdown",

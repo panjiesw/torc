@@ -4,13 +4,12 @@
 // https://opensource.org/licenses/MIT
 
 import * as React from 'react';
-import { PlainRoute } from 'react-router';
 import { FontIcon } from 'react-toolbox/lib/font_icon';
 import { mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
 import { Link as RawLink } from 'torc/link/Link';
 import { Link as ThemedLink } from 'torc/link';
-import { createRouter } from '../routes';
+import { createRouter, createRoutes } from '../routes';
 
 describe('Link', () => {
 	const TestLink: React.SFC<any> = () => (
@@ -18,13 +17,6 @@ describe('Link', () => {
 			<RawLink to='a' label='a' icon='menu' count={1} />
 		</div>
 	);
-
-	const A: React.SFC<any> = () => (<div>a</div>);
-
-	const routes: PlainRoute[] = [
-		{ path: '/', component: TestLink },
-		{ path: 'a', component: A }
-	]
 
 	beforeEach(() => {
 		jasmineEnzyme();
@@ -41,7 +33,7 @@ describe('Link', () => {
 		});
 
 		it('Must navigate to route', () => {
-			const wrapper = mount(createRouter(routes));
+			const wrapper = mount(createRouter(createRoutes(TestLink)));
 			wrapper.find('a').simulate('click', { button: 0 });
 			expect(wrapper).toContainReact(<div>a</div>);
 		});

@@ -17,6 +17,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 function htmlTemplate(filename = 'index.html') {
 	return {
 		filename,
+		title: 'TORC - React Toolbox Router Component',
 		inject: false,
 		template: require('html-webpack-template'),
 		appMountId: 'app',
@@ -66,7 +67,8 @@ function createConfig(env) {
 				'react-dom',
 				'react-router',
 				'react-toolbox',
-				'markdown-to-react-components'
+				'markdown-to-react-components',
+				'flexboxgrid/src/css/flexboxgrid.css'
 			]
 		}
 

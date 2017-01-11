@@ -11,10 +11,11 @@ A set of specific compatible components of [React Toolbox](http://www.react-tool
 ## TODO
 
 - [x] Link component and tests
-- [ ] ButtonLink component and tests
+- [x] ButtonLink component and tests
 - [ ] IconButtonLink component and tests
 - [ ] List component (and its subcomponents) and tests
 - [ ] Navigation component
+- [ ] Complete docs
 
 ## Limitations
 
