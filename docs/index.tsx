@@ -11,6 +11,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 import { Root } from './components/Root';
 import { Home } from './components/Home';
+import { DummyBlog } from './components/DummyBlog';
 
 const browserHistory = useRouterHistory(createBrowserHistory)({ basename: '/' })
 
@@ -19,7 +20,13 @@ const routes: PlainRoute = {
 	component: Root,
 	indexRoute: {
 		component: Home
-	}
+	},
+	childRoutes: [
+		{
+			path: 'blog',
+			component: DummyBlog
+		}
+	]
 }
 
 render((

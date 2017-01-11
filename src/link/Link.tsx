@@ -32,7 +32,7 @@ const Link: React.SFC<LinkProps> =
 				className={classes}
 				{...others} >
 				{icon && icon.length ? <FontIcon className={theme && theme.icon} value={icon} /> : null}
-				{label ? <abbr title={label}>{label}</abbr> : null}
+				{label ? <abbr>{label}</abbr> : null}
 				{count && parseInt(count, 10) ? <small>{count}</small> : null}
 				{children}
 			</RouterLink>

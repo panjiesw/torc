@@ -30,8 +30,8 @@
     "@types/serve-static" "*"
 
 "@types/history@*":
-  version "2.0.43"
-  resolved "https://registry.yarnpkg.com/@types/history/-/history-2.0.43.tgz#8b1101111eb07324d69d349853371de28d1a9fab"
+  version "2.0.44"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-2.0.44.tgz#1502843ba54c3be5768f079de05a5d6f03ba60ec"
 
 "@types/invariant@^2.2.28":
   version "2.2.28"
@@ -75,16 +75,16 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-router@^2.0.41":
-  version "2.0.41"
-  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-2.0.41.tgz#4c2510dfa2d85651af2126aed681c70dbe2f0303"
+"@types/react-router@^2.0.42":
+  version "2.0.42"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-2.0.42.tgz#15f25a45974de070a5d0fd3b9207dd940b04c81f"
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-0.0.0.tgz#2dd6fc1c1f5f6b3392464b067e0855e4c95bfea5"
+"@types/react@*", "@types/react@^15.0.0":
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.0.tgz#33eb3438130614f25c07c09e46ebec5a8d45b3b0"
 
 "@types/serve-static@*":
   version "1.7.31"
@@ -1850,6 +1850,10 @@ findup-sync@~0.3.0:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+flexboxgrid@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/flexboxgrid/-/flexboxgrid-6.3.1.tgz#e99898afc07b7047722bb81a958a5fba4d4e20fd"
 
 for-in@^0.1.5:
   version "0.1.6"

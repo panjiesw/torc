@@ -108,7 +108,8 @@ function createConfig(env) {
 			path.resolve(__dirname, 'src'),
 			path.resolve(__dirname, 'docs'),
 			/react-toolbox/,
-			/normalize\.css/
+			/normalize\.css/,
+			/flexboxgrid/
 		]
 	}
 	if (env.prod) {
