@@ -13,7 +13,7 @@ import classnames from 'classnames';
 
 export interface LinkProps extends React.HTMLAttributes<RouterLink> {
 	to: Router.RoutePattern | Router.LocationDescriptor | ((...args: any[]) => Router.LocationDescriptor);
-	count?: number;
+	count?: any;
 	icon?: string;
 	label?: string;
 	onlyActiveOnIndex?: boolean;
@@ -32,8 +32,8 @@ const Link: React.SFC<LinkProps> =
 				className={classes}
 				{...others} >
 				{icon && icon.length ? <FontIcon className={theme && theme.icon} value={icon} /> : null}
-				{label ? <abbr title={label}>{label}</abbr> : null}
-				{count && count !== 0 ? <small>{count}</small> : null}
+				{label ? <abbr>{label}</abbr> : null}
+				{count && parseInt(count, 10) ? <small>{count}</small> : null}
 				{children}
 			</RouterLink>
 		)

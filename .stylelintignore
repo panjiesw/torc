@@ -1,4 +1,5 @@
 node_modules
 dist
+docs/static/*.css
 src/components/helpers.css
 src/pages/**/helpers.css

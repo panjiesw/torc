@@ -11,4 +11,4 @@ import * as theme from 'react-toolbox/lib/link/theme.css';
 const ThemedLink = themr<LinkProps>(LINK, theme)(Link);
 
 export default ThemedLink;
-export { ThemedLink as Link };
+export { ThemedLink as Link, LinkProps };
